@@ -40,7 +40,10 @@ header a:hover {
 
 .flex-container {
   display: flex;
-  flex-direction: row-reverse ;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+
   height: 525px;
 }
 
@@ -52,13 +55,14 @@ header a:hover {
 .selfie {
   width: 400px;
   padding: 50px;
+  border-radius: 50%;
 }
 .fav-quote {
   background-color:darkslateblue;
-  border-radius: 10px;
-  margin: 100px;
+  border-radius: 20px;
+  margin: 80px 100px;
   padding: 25px;
-  width: 50%;
+  width: 80%;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -68,24 +72,31 @@ header a:hover {
   font-family:cursive;
 }
 .pg-home {
-  background-color: cornflowerblue;
+  background-color: lightslategrey;
 }
-.my-intrests {
+.pg-portfolio {
+  background-color: lightslategrey;
+}
+.pg-about {
+  background-color: lightslategrey;
+}
+.my-interests {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  padding: 40px;
 }
-.my-intrests h2 {
-  color:darkslateblue;
-  box-shadow: 0 0 12px -2px black;
-  width: 80%;
+.my-interests h2 {
+  color:#333;
+  width: 90%;
   padding: 0 0 0 40px;
   font-size: 40pt;
 }
-.my-intrests p {
+
+.my-interests p {
   font-size: x-large;
   padding: 10px;
-  color: darkslateblue;
+  color:#333;
   font-size: 30pt;
 }
 
@@ -96,4 +107,41 @@ footer {
   padding: 20px 50px;
   box-shadow: 0 1px 8px black;
   background-color: #333;
+}
+
+.flex-sect-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 90%;
+}
+.flex-sect-container > div {
+  flex-grow: 1;
+  margin: 50px 50px;
+  padding: 100px 100px;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.pg-portfolio h1 {
+  text-align: center;
+  color: aliceblue;
+  border-bottom: aliceblue;
+}
+.proj-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* Rounded border */
+.proj-card hr.rounded {
+  border-top: 8px solid rgb(159, 10, 10);
+  border-radius: 5px;
+}
+.proj-card img {
+  margin: 20px 50px 10px 50px;
+  width: 200px;
 }
